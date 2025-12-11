@@ -27,16 +27,17 @@ namespace GPACalculator
                 Console.Clear();
                 string suffix = GetOrdinalSuffix(i + 1);
 
+                // 
                 Console.Write($"{i+1}{suffix} subject name: ");
                 string subject = Console.ReadLine();
 
-                Console.Write($"{subject}'s weight (1-5): ");
+                Console.Write($"{subject}'s weight (0-4): ");
                 string stringSubjectWeight = Console.ReadLine();
                 double subjectWeight = double.Parse(stringSubjectWeight);
 
                 weightSum += subjectWeight;
 
-                Console.Write($"{studentName}'s {i+1}{suffix} grade - {subject}: ");
+                Console.Write($"{studentName}'s {i+1}{suffix} grade - {subject} (0-4): ");
                 string stringSubjectGrade = Console.ReadLine();
                 double subjectGrade = double.Parse(stringSubjectGrade);
 
@@ -49,9 +50,28 @@ namespace GPACalculator
             Console.Clear();
             double GPA = CalculateGPA(gradeSum, weightSum);
 
+            int situation = EvaluateApproval(GPA);
+
             Console.WriteLine($"{studentName}'s GPA: {GPA}");
 
-            // ADICIONAR CODIGO PARA LIMPAR TERMINAL E CALCULAR GPA FINAL
+            switch (situation)
+            {
+                case 1:
+                    Console.WriteLine($"Student {studentName} failed!");
+                    break;
+                case 2:
+                    Console.WriteLine($"Student {studentName} is under retention!");
+                    break;
+                case 3:
+                    Console.WriteLine($"Student {studentName} passed!");
+                    break;
+                case 4:
+                    Console.WriteLine($"Student {studentName} strongly passed - congratulations!");
+                    break;
+                default:
+                    Console.WriteLine($"There was a problem evaluating {studentName}'s GPA. Please try again.");
+                    break;
+            }
         }
 
         static string GetOrdinalSuffix(int number)
@@ -82,5 +102,30 @@ namespace GPACalculator
         {
             return totalGrade / totalWeight;
         }
+
+        static int EvaluateApproval(double gpa)
+        {
+            int studentSituation;
+
+            // 0 = fail
+            // 1 = retention
+            // 2 = pass
+            // 3 = strong pass
+
+            if (gpa < 1.7) {
+                studentSituation = 0;
+            } else if (1.7 <= gpa && gpa <= 1.9)
+            {
+                studentSituation = 1;
+            } else if (2 <= gpa && gpa <= 2.9)
+            {
+                studentSituation = 2;
+            } else
+            {
+                studentSituation = 3;
+            }
+
+            return studentSituation;
+        } 
     }
 }

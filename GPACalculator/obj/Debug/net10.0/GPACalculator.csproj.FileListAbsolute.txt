@@ -12,3 +12,4 @@ C:\Users\Chiemi Hayashi\Desktop\programacao\c-sharp\GPACalculator\GPACalculator\
 C:\Users\Chiemi Hayashi\Desktop\programacao\c-sharp\GPACalculator\GPACalculator\obj\Debug\net10.0\GPACalculator.pdb
 C:\Users\Chiemi Hayashi\Desktop\programacao\c-sharp\GPACalculator\GPACalculator\obj\Debug\net10.0\GPACalculator.genruntimeconfig.cache
 C:\Users\Chiemi Hayashi\Desktop\programacao\c-sharp\GPACalculator\GPACalculator\obj\Debug\net10.0\ref\GPACalculator.dll
+C:\Users\Chiemi Hayashi\Desktop\programacao\c-sharp\GPACalculator\GPACalculator\obj\Debug\net10.0\GPACalculator.sourcelink.json
