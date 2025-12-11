@@ -15,45 +15,50 @@ namespace GPACalculator
             string stringTotalGradesNum = Console.ReadLine();
             int totalGradesNum = int.Parse(stringTotalGradesNum);
 
-            // creates an array of doubles with size being the number of total grades
-            double[] gradesArray = new double[totalGradesNum];
-
             double weightSum = 0;
             double gradeSum = 0;
 
             // runs the array with a for loop, storing each grade on its corresponding index inside the array
-            for (int i = 0; i < gradesArray.Length; i++)
+            for (int i = 0; i < totalGradesNum; i++)
             {
                 Console.Clear();
                 string suffix = GetOrdinalSuffix(i + 1);
 
-                // 
+                // reads the name of the subject
                 Console.Write($"{i+1}{suffix} subject name: ");
                 string subject = Console.ReadLine();
 
+                // reads the weight of the subject
                 Console.Write($"{subject}'s weight (0-4): ");
                 string stringSubjectWeight = Console.ReadLine();
                 double subjectWeight = double.Parse(stringSubjectWeight);
 
+                // adds the weight of the subject to the total weight of all subjects added
                 weightSum += subjectWeight;
 
+                // reads the student's grade in said subject
                 Console.Write($"{studentName}'s {i+1}{suffix} grade - {subject} (0-4): ");
                 string stringSubjectGrade = Console.ReadLine();
                 double subjectGrade = double.Parse(stringSubjectGrade);
 
+                // gets the student's subtotal grade on said subject, based on its weight
                 double gradeSubtotal = subjectGrade * subjectWeight;
                 gradeSum += gradeSubtotal;
-                gradesArray[i] = subjectGrade;
-
             }
 
             Console.Clear();
+
+            // calls out method to calculate gpa based on the sum of grades subtotals and their respective weight
+            // and assign the output to the GPA variable
             double GPA = CalculateGPA(gradeSum, weightSum);
 
+            // calls out method to evaluate the student's approval situation based on the GPA
+            // and assign the output to the situation variable
             int situation = EvaluateApproval(GPA);
 
             Console.WriteLine($"{studentName}'s GPA: {GPA}");
 
+            // displays a different output based off of the student's situation
             switch (situation)
             {
                 case 1:
@@ -74,6 +79,7 @@ namespace GPACalculator
             }
         }
 
+        // method for getting the right suffix on the ordinal number, based off of it's last digit
         static string GetOrdinalSuffix(int number)
         {
             int lastTwo = number % 100;
@@ -98,11 +104,13 @@ namespace GPACalculator
             }
         }
 
+        // method for calculating the GPA score based off of the subtotal grade sum and the subjects weights sum
         static double CalculateGPA(double totalGrade, double totalWeight)
         {
             return totalGrade / totalWeight;
         }
 
+        // method for assigning a value for the student's approval situation, based off of his GPA score
         static int EvaluateApproval(double gpa)
         {
             int studentSituation;

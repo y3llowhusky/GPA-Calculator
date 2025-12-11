@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GPACalculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9639ddb785296ffcbac96401f67dd270760e0c8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+614b3bd27f33b87306e387b4aa36f2feaf0beb61")]
 [assembly: System.Reflection.AssemblyProductAttribute("GPACalculator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GPACalculator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
