@@ -46,7 +46,8 @@ namespace GPACalculator
 
             }
 
-            double GPA = gradeSum / weightSum;
+            Console.Clear();
+            double GPA = CalculateGPA(gradeSum, weightSum);
 
             Console.WriteLine($"{studentName}'s GPA: {GPA}");
 
@@ -75,6 +76,11 @@ namespace GPACalculator
                 default:
                     return "th";
             }
+        }
+
+        static double CalculateGPA(double totalGrade, double totalWeight)
+        {
+            return totalGrade / totalWeight;
         }
     }
 }
