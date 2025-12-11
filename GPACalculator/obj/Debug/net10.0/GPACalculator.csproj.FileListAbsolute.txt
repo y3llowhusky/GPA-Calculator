@@ -1,0 +1,14 @@
+C:\Users\Chiemi Hayashi\Desktop\programacao\c-sharp\GPACalculator\GPACalculator\bin\Debug\net10.0\GPACalculator.exe
+C:\Users\Chiemi Hayashi\Desktop\programacao\c-sharp\GPACalculator\GPACalculator\bin\Debug\net10.0\GPACalculator.deps.json
+C:\Users\Chiemi Hayashi\Desktop\programacao\c-sharp\GPACalculator\GPACalculator\bin\Debug\net10.0\GPACalculator.runtimeconfig.json
+C:\Users\Chiemi Hayashi\Desktop\programacao\c-sharp\GPACalculator\GPACalculator\bin\Debug\net10.0\GPACalculator.dll
+C:\Users\Chiemi Hayashi\Desktop\programacao\c-sharp\GPACalculator\GPACalculator\bin\Debug\net10.0\GPACalculator.pdb
+C:\Users\Chiemi Hayashi\Desktop\programacao\c-sharp\GPACalculator\GPACalculator\obj\Debug\net10.0\GPACalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Chiemi Hayashi\Desktop\programacao\c-sharp\GPACalculator\GPACalculator\obj\Debug\net10.0\GPACalculator.AssemblyInfoInputs.cache
+C:\Users\Chiemi Hayashi\Desktop\programacao\c-sharp\GPACalculator\GPACalculator\obj\Debug\net10.0\GPACalculator.AssemblyInfo.cs
+C:\Users\Chiemi Hayashi\Desktop\programacao\c-sharp\GPACalculator\GPACalculator\obj\Debug\net10.0\GPACalculator.csproj.CoreCompileInputs.cache
+C:\Users\Chiemi Hayashi\Desktop\programacao\c-sharp\GPACalculator\GPACalculator\obj\Debug\net10.0\GPACalculator.dll
+C:\Users\Chiemi Hayashi\Desktop\programacao\c-sharp\GPACalculator\GPACalculator\obj\Debug\net10.0\refint\GPACalculator.dll
+C:\Users\Chiemi Hayashi\Desktop\programacao\c-sharp\GPACalculator\GPACalculator\obj\Debug\net10.0\GPACalculator.pdb
+C:\Users\Chiemi Hayashi\Desktop\programacao\c-sharp\GPACalculator\GPACalculator\obj\Debug\net10.0\GPACalculator.genruntimeconfig.cache
+C:\Users\Chiemi Hayashi\Desktop\programacao\c-sharp\GPACalculator\GPACalculator\obj\Debug\net10.0\ref\GPACalculator.dll
